@@ -1,16 +1,17 @@
 # dancr
 
-A new Flutter project.
+Project to help social dancers find a place where to dance anywhere in the world. 
+
+A lot of the time is hard to find a place where to dance when you're on vacation or you've traveled somewhere new. You ask a friend, two friends, even three friends and noone can help you. This app can.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+I'm still deciding on the persistent layer.
 
-A few resources to get you started if this is your first Flutter project:
+## Steps to run 
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our 
-[online documentation](https://flutter.dev/docs), which offers tutorials, 
-samples, guidance on mobile development, and a full API reference.
+- Get flutter @ [Flutter.dev](https://www.flutter.dev/download)
+- Download VSCode
+- Download [Flutter Extension](https://marketplace.visualstudio.com/items?itemName=Dart-Code.flutter)
+- Download [Dart Extension](https://marketplace.visualstudio.com/items?itemName=Dart-Code.dart-code)
+- You need an Android Virtual Device / For this project I'm using Google's own [AVD](https://developer.android.com/studio/run/managing-avds)
