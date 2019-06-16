@@ -1,39 +1,16 @@
+import 'package:dancr/pages/login.dart';
 import 'package:flutter/material.dart';
-import 'package:english_words/english_words.dart';
 
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
+  const MyApp({Key key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return MaterialApp( 
       debugShowCheckedModeBanner: false,
-      title: 'dancr',
-      theme: ThemeData(
-        primarySwatch: Colors.pink,
-      ),
-      home: Scaffold(
-        appBar: AppBar(
-          title: Text('dancr'),
-        ),
-        body: Center(
-          child: RandomWords(),
-        ),
-      ),
-    );
+      home: LoginPage(),
+       );
   }
-}
-
-class RandomWordsState extends State<RandomWords> {
-
-  @override
-  Widget build(BuildContext context) {
-    final wordPair = WordPair.random();
-    return Text(wordPair.asPascalCase);
-  }
-}
-
-class RandomWords extends StatefulWidget {
-  @override
-  RandomWordsState createState() => RandomWordsState();
 }
