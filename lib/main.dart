@@ -9,7 +9,10 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      title: "dancr",
       theme: ThemeData(
+        brightness: Brightness.light,
+        fontFamily: "Montserrat",
         primaryColor: Colors.pink,
       ),
       debugShowCheckedModeBanner: false,

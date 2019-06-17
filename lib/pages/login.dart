@@ -7,7 +7,9 @@ class LoginPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Container(
+        body: SingleChildScrollView(
+          padding: EdgeInsets.only(top:75, right: 10, left:10),
+      child: Container(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
@@ -17,56 +19,70 @@ class LoginPage extends StatelessWidget {
                 width: 2,
               ),
               boxShadowColor: Colors.pinkAccent,
-                child: Text(
-              "dancr",
-              style: TextStyle(
-                fontSize: 32.0,
-                color: Colors.grey,
-               ),
-               textAlign: TextAlign.center,
+              child: 
+              Container(
+                child: Column(children: <Widget>[
+                  Text(
+                "dancr",
+                style: TextStyle(
+                  fontSize: 40.0,
+                  color: Colors.black,
+                ),
+                textAlign: TextAlign.center,
+              ),
+              Text(
+                "find where to dance near you",
+                style: TextStyle(
+                  fontSize: 12.5,
+                  color: Colors.black,
+                ),
+                textAlign: TextAlign.center,
+              ),
+                ],)
+              ),
             ),
-            ),
-            AppCard(child: Container(
-              margin: EdgeInsets.only(top: 20.0),
-              child: Column(
-                children: <Widget>[
-                  TextFormField(
-                    decoration: InputDecoration(labelText: "Email"),
-                    ),
-                    TextFormField(
-                    decoration: InputDecoration(labelText: "Password"),
-                    ),
-                    Container(
-                      width: double.infinity,
-                      margin: EdgeInsets.only(top: 20.0),
-                      child: FlatButton(
-                        color : Colors.pinkAccent,
-                        onPressed: (){},
-                        child: Text("Login", style: TextStyle(color: Colors.white),)
-                      )
-                    ),
-                    Container(
-                      alignment: Alignment.centerRight,
-                      child: FlatButton(
-                        onPressed: (){},
-                        child: Text("Forgot Password?")
-                      )
-                    ),
-              ],
-              )
-            ),
+            AppCard(
+              child: Container(
+                  margin: EdgeInsets.only(top: 20.0),
+                  child: Column(
+                    children: <Widget>[
+                      TextFormField(
+                        decoration: InputDecoration(labelText: "Email"),
+                      ),
+                      TextFormField(
+                        decoration: InputDecoration(labelText: "Password"),
+                      ),
+                      Container(
+                          width: double.infinity,
+                          margin: EdgeInsets.only(top: 20.0),
+                          child: FlatButton(
+                              color: Colors.pinkAccent,
+                              onPressed: () {},
+                              child: Text(
+                                "Login",
+                                style: TextStyle(color: Colors.white),
+                              ))),
+                      Container(
+                          alignment: Alignment.centerRight,
+                          child: FlatButton(
+                              onPressed: () {},
+                              child: Text("Forgot Password?"))),
+                    ],
+                  )),
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
-              Text("Don't have an account yet?"),
-              FlatButton(
-                onPressed: (){},
-                child: Text("Sign Up"),)
-            ],)
+                Text("Don't have an account yet?"),
+                FlatButton(
+                  onPressed: () {},
+                  child: Text("Sign Up"),
+                )
+              ],
+            )
           ],
         ),
       ),
-    );
+    ));
   }
 }
