@@ -26,7 +26,7 @@ class LoginPage extends StatelessWidget {
                 textAlign: TextAlign.center,
               ),
               Text(
-                "where to dance, where to crash.",
+                "first dance, then crash.",
                 style: TextStyle(
                   fontSize: 12.5,
                   color: Colors.black,
@@ -68,10 +68,10 @@ class LoginPage extends StatelessWidget {
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
-                Text("Don't have an account yet?"),
+                Text("Don't have an account yet? "),
                 FlatButton(
                   onPressed: () {},
-                  child: Text("Sign Up"),
+                  child: Text("Sign Up", style: TextStyle(color: Theme.of(context).accentColor, fontWeight: FontWeight.w600)),
                 )
               ],
             )
