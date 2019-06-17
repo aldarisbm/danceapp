@@ -12,8 +12,9 @@ class MyApp extends StatelessWidget {
       title: "dancr",
       theme: ThemeData(
         brightness: Brightness.light,
-        fontFamily: "Montserrat",
-        primaryColor: Colors.pink,
+        fontFamily: "B612",
+        primaryColor: Colors.orange,
+        accentColor: Colors.amber,
       ),
       debugShowCheckedModeBanner: false,
       home: LoginPage(),

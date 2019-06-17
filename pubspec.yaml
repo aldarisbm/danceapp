@@ -1,5 +1,5 @@
 name: dancr
-description: A new Flutter project.
+description: dance b&b
 
 # The following defines the version and build number for your application.
 # A version number is three numbers separated by dots, like 1.2.43
@@ -35,6 +35,12 @@ dev_dependencies:
 
 # The following section is specific to Flutter.
 flutter:
+  fonts:
+    - family: B612
+      fonts:
+        - asset: fonts/B612Mono-Regular.ttf
+        - asset: fonts/B612Mono-Italic.ttf
+          style: italic
 
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in

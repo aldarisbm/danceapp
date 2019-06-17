@@ -14,24 +14,19 @@ class LoginPage extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             AppCard(
-              borderStyle: Border.all(
-                color: Colors.pink,
-                width: 2,
-              ),
-              boxShadowColor: Colors.pinkAccent,
               child: 
               Container(
                 child: Column(children: <Widget>[
                   Text(
-                "dancr",
+                "dance&crash",
                 style: TextStyle(
                   fontSize: 40.0,
-                  color: Colors.black,
+                  color: Colors.amber,
                 ),
                 textAlign: TextAlign.center,
               ),
               Text(
-                "find where to dance near you",
+                "where to dance, where to crash.",
                 style: TextStyle(
                   fontSize: 12.5,
                   color: Colors.black,
@@ -56,7 +51,7 @@ class LoginPage extends StatelessWidget {
                           width: double.infinity,
                           margin: EdgeInsets.only(top: 20.0),
                           child: FlatButton(
-                              color: Colors.pinkAccent,
+                              color: Theme.of(context).primaryColor,
                               onPressed: () {},
                               child: Text(
                                 "Login",

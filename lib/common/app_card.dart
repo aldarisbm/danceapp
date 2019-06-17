@@ -27,12 +27,12 @@ class _AppCardState extends State<AppCard> {
             child: widget.child,
             decoration: new BoxDecoration(
                 border: widget.borderStyle ??
-                    Border.all(color: Colors.black, width: 2),
+                    Border.all(color: Theme.of(context).primaryColor, width: 2),
                 color: Colors.white,
                 boxShadow: [
                   new BoxShadow(
-                      color: widget.boxShadowColor ?? Colors.black,
-                      offset: Offset(10.0, 10.0))
+                      color: widget.boxShadowColor ?? Theme.of(context).accentColor,
+                      offset: Offset(5.0, 5.0))
                 ]),
           ),
         )
