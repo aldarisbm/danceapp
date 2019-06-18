@@ -14,21 +14,25 @@ class LoginPage extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             AppCard(
+              borderRadius: BorderRadius.circular(7.5),
               child: Container(
                   child: Column(
                 children: <Widget>[
                   Text(
                     "dance&crash",
                     style: TextStyle(
+                      fontFamily: "Mali",
                       fontSize: 40.0,
+                      fontWeight: FontWeight.bold,
                       color: Colors.amber,
                     ),
                     textAlign: TextAlign.center,
                   ),
                   Text(
-                    "first dance, then crash.",
+                    "dance, sleep, rinse, repeat",
                     style: TextStyle(
                       fontSize: 12.5,
+                      fontWeight: FontWeight.bold,
                       color: Colors.black,
                     ),
                     textAlign: TextAlign.center,
@@ -37,6 +41,7 @@ class LoginPage extends StatelessWidget {
               )),
             ),
             AppCard(
+              borderRadius: BorderRadius.circular(7.5),
               child: Container(
                   margin: EdgeInsets.only(top: 20.0),
                   child: Column(
@@ -45,6 +50,7 @@ class LoginPage extends StatelessWidget {
                         decoration: InputDecoration(labelText: "Email"),
                       ),
                       TextFormField(
+                        obscureText: true,
                         decoration: InputDecoration(labelText: "Password"),
                       ),
                       Container(
