@@ -1,4 +1,4 @@
-# dancr
+# danceapp
 
 Project to help social dancers find a place where to dance anywhere in the world. 
 

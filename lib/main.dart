@@ -1,4 +1,4 @@
-import 'package:dancr/pages/login.dart';
+import 'package:danceapp/pages/login.dart';
 import 'package:flutter/material.dart';
 
 void main() => runApp(MyApp());
