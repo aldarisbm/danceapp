@@ -4,9 +4,14 @@ class AppCard extends StatefulWidget {
   final Widget child;
   final Border borderStyle;
   final Color boxShadowColor;
+  final BorderRadius borderRadius;
 
   AppCard(
-      {Key key, @required this.child, this.borderStyle, this.boxShadowColor})
+      {Key key,
+      @required this.child,
+      this.borderStyle,
+      this.boxShadowColor,
+      this.borderRadius})
       : super(key: key);
 
   _AppCardState createState() => _AppCardState();
@@ -26,12 +31,14 @@ class _AppCardState extends State<AppCard> {
             padding: EdgeInsets.all(20.0),
             child: widget.child,
             decoration: new BoxDecoration(
+                borderRadius: widget.borderRadius ?? null,
                 border: widget.borderStyle ??
                     Border.all(color: Theme.of(context).primaryColor, width: 2),
                 color: Colors.white,
                 boxShadow: [
                   new BoxShadow(
-                      color: widget.boxShadowColor ?? Theme.of(context).accentColor,
+                      color: widget.boxShadowColor ??
+                          Theme.of(context).accentColor,
                       offset: Offset(5.0, 5.0))
                 ]),
           ),
