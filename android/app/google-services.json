@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "412957822525",
+    "firebase_url": "https://danceapp-idea.firebaseio.com",
+    "project_id": "danceapp-idea",
+    "storage_bucket": "danceapp-idea.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:412957822525:android:bacf0ae8a8e8053e",
+        "android_client_info": {
+          "package_name": "dev.joseberrio.danceapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "412957822525-dt8rb4uep9fjgc5oiceq01isgfcbtslt.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "dev.joseberrio.danceapp",
+            "certificate_hash": "ff41c06c4b5a86eb120eb03d3a07cc64f4d33b76"
+          }
+        },
+        {
+          "client_id": "412957822525-0e607jlrr2h6b0au61jboum8mjhpsde1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCTeYAs0MnSZHxC0EzfpkRU54hVpIUtpqA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "412957822525-0e607jlrr2h6b0au61jboum8mjhpsde1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
