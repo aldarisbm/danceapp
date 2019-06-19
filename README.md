@@ -15,3 +15,30 @@ I'm still deciding on the persistent layer.
 - Download [Flutter Extension](https://marketplace.visualstudio.com/items?itemName=Dart-Code.flutter)
 - Download [Dart Extension](https://marketplace.visualstudio.com/items?itemName=Dart-Code.dart-code)
 - You need an Android Virtual Device / For this project I'm using Google's own [AVD](https://developer.android.com/studio/run/managing-avds)
+
+#TODO => 
+
+Document =>
+    when adding firebase_auth to pubspec
+    multidex error
+    dependencies {
+
+        implementation 'com.android.support:multidex:1.0.3'
+    }
+    defaultConfig {
+            multiDexEnabled true
+    }
+
+Document => 
+
+    create firebase app -> (follow their instructions) make sure to change the app build.gradle
+
+    defaultConfig {
+        //whatever name you gave it
+        applicationId "dev.joseberrio.danceapp"
+    }
+
+once in the app MAKE SURE YOU ADD AN EMAIL
+enable google sign in (under auth)
+& create firestore
+
