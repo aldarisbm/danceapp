@@ -36,7 +36,7 @@ For an idea on the architecture of the application, we'll be using flutter/dart 
 - Firebase create new project
 - After you create a project. 
     - Register app under `dev.joseberrio.danceapp` domain.
-    
+
     - Get the local fingerprints to the firebase project with the following command: 
     `keytool -list -v -alias androiddebugkey -keystore ~/.android/debug.keystore` 
 
@@ -46,7 +46,7 @@ For an idea on the architecture of the application, we'll be using flutter/dart 
 
     - Download the config file `google-services.json` and `mv ~/Downloads/google-services.json ~/<YourPathToApp>/android/app/`
 
-    - At the `/android/build.gradle` level, add the following dependencies:
+    - At the `/android/build.gradle` level, add the following dependencies:  
     ```
     buildscript {
         dependencies {
@@ -55,7 +55,7 @@ For an idea on the architecture of the application, we'll be using flutter/dart 
     }
     ```
 
-    - At the `/android/app/build.gradle` level, add the following dependencies:
+    - At the `/android/app/build.gradle` level, add the following dependencies:  
     ```
     defaultConfig {
         applicationId "dev.joseberrio.danceapp"
