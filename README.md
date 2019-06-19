@@ -56,6 +56,7 @@ For an idea on the architecture of the application, we'll be using flutter/dart 
     ```
 
     - At the `/android/app/build.gradle` level, add the following dependencies:  
+    
     ```
     defaultConfig {
         applicationId "dev.joseberrio.danceapp"
