@@ -1,3 +1,4 @@
+import 'package:danceapp/auth.dart';
 import 'package:danceapp/common/app_card.dart';
 import 'package:flutter/material.dart';
 
@@ -19,7 +20,7 @@ class LoginPage extends StatelessWidget {
                   child: Column(
                 children: <Widget>[
                   Text(
-                    "dance&crash",
+                    "dancebnb",
                     style: TextStyle(
                       fontFamily: "Mali",
                       fontSize: 40.0,
@@ -54,15 +55,29 @@ class LoginPage extends StatelessWidget {
                         decoration: InputDecoration(labelText: "Password"),
                       ),
                       Container(
-                          width: double.infinity,
-                          margin: EdgeInsets.only(top: 20.0),
-                          child: FlatButton(
-                              color: Theme.of(context).primaryColor,
-                              onPressed: () {},
-                              child: Text(
-                                "Login",
-                                style: TextStyle(color: Colors.white),
-                              ))),
+                        width: double.infinity,
+                        margin: EdgeInsets.only(top: 20.0),
+                        child: FlatButton(
+                          color: Theme.of(context).primaryColor,
+                          onPressed: () {},
+                          child: Text(
+                            "Login",
+                            style: TextStyle(color: Colors.white),
+                          ),
+                        ),
+                      ),
+                       Container(
+                        width: double.infinity,
+                        margin: EdgeInsets.only(top: 20.0),
+                        child: FlatButton(
+                          color: Colors.blue,
+                          onPressed: () => authService.googleSignIn(),
+                          child: Text(
+                            "Google Login",
+                            style: TextStyle(color: Colors.white),
+                          ),
+                        ),
+                      ),
                       Container(
                           alignment: Alignment.centerRight,
                           child: FlatButton(
